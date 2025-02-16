@@ -69,27 +69,27 @@ function main() {
     jurassique: "Jurassique",
   };
 
-  // Permet d'être réutilisé dans la fonction quandRechercheArtefact
-  let nomEpoqueActuelle;
-
   // Création dynamique des époques de destination de la machine temporelle
   creerLesChoixEpoque(epoques);
-
-  // Fonction appelée plus haut quand le formulaire de voyage temporel est envoyé
-  // et qu'une époque de destination du voyage temporel a été choisi
-  // Faites le test depuis la page HTML
-  function quandEpoqueChoisie(nomEpoque) {
-    nomEpoqueActuelle = nomEpoque;
-    console.log(nomEpoqueActuelle);
-    // Utilisation de votre fonction voyagerTemps
-  }
-
-  // Fonction appelée plus haut quand le formulaire de recherche d'artefact est envoyé
-  // Faites le test depuis la page HTML
-  function quandRechercheArtefact(artefact) {
-    console.log(artefact);
-    // Utilisation de votre fonction collecterArtefact
-  }
 }
 
 main();
+
+// Permet d'être réutilisé dans la fonction quandRechercheArtefact
+let nomEpoqueActuelle;
+
+// Fonction appelée plus haut quand le formulaire de voyage temporel est envoyé
+// et qu'une époque de destination du voyage temporel a été choisi
+// Faites le test depuis la page HTML
+function quandEpoqueChoisie(nomEpoque) {
+  nomEpoqueActuelle = nomEpoque;
+  console.log(nomEpoqueActuelle);
+  // Utilisation de votre fonction voyagerTemps
+}
+
+// Fonction appelée plus haut quand le formulaire de recherche d'artefact est envoyé
+// Faites le test depuis la page HTML
+function quandRechercheArtefact(artefact) {
+  console.log(artefact);
+  // Utilisation de votre fonction collecterArtefact
+}
